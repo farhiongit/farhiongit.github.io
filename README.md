@@ -5,14 +5,16 @@ Therefore, I've got my fixed ideas.
 
 ## My favourite code
 
-Here are few tools and implementations of famous algorithms of my own.
+Hereafter are few tools and implementations of famous algorithms of my own.
 
 - tools are here to show that the C language can be extended to provide software component similar to those available with "modern" languages.
 - algorithms are here for fun and personal studies.
 
+Everything is on [Github](https://github.com/farhiongit).
+
 ### Tools
 
-#### Thread pool
+#### Pool of threads for parallel programming on CPU
 
 This is the common pattern of asynchronous programming ported to C language for parallel programming.
 
@@ -23,7 +25,7 @@ This comprehensive C standard implementation of [thread pool](https://github.com
 - monitoring feature ;
 - management of virtual tasks (invoking asynchronous system calls).
 
-#### Channels
+#### Channels for exchanging messages between threads
 
 This is another common pattern of asynchronous programming ported to C language for synchronisation of threads.
 
@@ -33,7 +35,7 @@ The interface is easy to use: open the channel between threads, send messages on
 
 Messages sent in the channel are strongly typed with some kind of templates (from an idea of [Randy Gaul](https://randygaul.github.io/)).
 
-#### Dates and times
+#### Dates and times without wasting time
 
 The C standard time handling API (time.h) is very low level and difficult to understand and to use. The object `struct tm` follows unusual and subtle conventions, is counter-intuitive and needs translation to concepts as simple as days, months and years to name a few. The use of functions such as `mktime`, `localtime` is not straight forward.
 
@@ -41,7 +43,7 @@ Nevertheless, it gets everything needed to handle UTC, local time (as chosen by 
 
 [better_times](https://github.com/farhiongit/better_times) allows to manage UTC, local time and time zones conveniently in C, with a correct handling of daylight saving time. It offers a complete set of functions for definition and calculation on date and time, based on the usual structure `struct tm` of `<time.h>`.
 
-#### C standard timers
+#### Light C standard timers
 
 POSIX defines timers with `timer_create` and `timer_settime`.
 
@@ -66,11 +68,13 @@ And Randy Gaul has shown can this can be [applied to C](http://cecilsunkure.blog
 
 I turned his ideas into [template containers for C](https://github.com/farhiongit/Ctemplates).
 
+This is therefore another implementation of containers with is strongly typed, in C.
+
 #### log4t and trace
 
 [trace](https://github.com/farhiongit/c_thread_pool/blob/master/trace.h) permits to log all calls to a function without changing the code.
 
-[log4t] is a korn-shell script that catches the standard input, standard output and standard error of a process and log them to files, augmented with timestamp, without changing the code of the process and without recompiling.
+[log4t] is a korn-shell script that catches the standard input, standard output and standard error of a process and log them to files, augmented with timestamp, without changing the code of the process and without recompiling. Worth to be seen.
 
 #### h2md
 
@@ -92,9 +96,18 @@ With a user-friendly programming interface.
 
 Make the famous Aho Corasick algorithm [easy to use](https://github.com/farhiongit/aho-corasick-1975) for C.
 
-#### Knuth's Dancing links
+It faithfully and accurately sticks, step by step, to the pseudo-code given in the original (and exquisite) paper of 1975 from Aho and Corasick: "Efficient string matching: An aid to bibliographic search"
+
+But this implementation comes with few enhancements:
+
+- it is generic in the sense that it works for any kind of alphabet of any type and number of signs (and not limited to 256 and not only for `char`) ;
+- the list of signs to search for is not statically fixed and can grow dynamically and indefinitely, even while searching for already registered words.
+
+#### Exact cover search with the Knuth's Dancing links algorithm
 
 Make the famous Knuth's Dancing links algorithm [easy to use](https://github.com/farhiongit/dancing-links) for C.
+
+Can be used to solve Sudoku grids for instance.
 
 ## My favourite languages
 
