@@ -1,18 +1,20 @@
 # My Favourite Things
 
+> C further
+
 Let's go straight to the point: I'm an old school IT engineer.
 
 I'm am very fond of C. The C programming language is imperative, and only imperative (no class of objects, no inheritance, no templates, no generic programming), so it is simple and easy to learn.
 
-It is nevertheless a [modern](https://inria.hal.science/hal-02383654v2/preview/modernC.pdf#page=2) and [evolving language](https://www.open-std.org/jtc1/sc22/wg14/www/wg14_document_log.htm). The language is not a burden (as soon as you have understood that a pointer is the address of a location in memory, and that an array is the address of consecutive locations in memory) so the programmer can focus on what is to be done rather than on how to do it.
+It is nevertheless a [modern](https://inria.hal.science/hal-02383654v2/preview/modernC.pdf#page=2)[^1] and [evolving language](https://www.open-std.org/jtc1/sc22/wg14/www/wg14_document_log.htm)[^2]. The language is small and simple, so the programmer can focus on what is to be done rather than on how to do it (what you C is what you get).
 
-The [specifications](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3435.pdf) are short (168 pages for the core language) and easy to understand, stick to [sounded principles](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3280.htm), and common compilers ([clang](https://clang.llvm.org/) and [gcc](https://gcc.gnu.org/) to name a few) propose a bunch of extensions (see [here](https://clang.llvm.org/docs/LanguageExtensions.html) or [there](https://gcc.gnu.org/onlinedocs/gcc/C-Extensions.html)).
+The [specifications](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3435.pdf) are short (168 pages for the core language) and easy to understand, they stick to [sounded principles](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3280.htm)[^3], and common compilers ([clang](https://clang.llvm.org/) and [gcc](https://gcc.gnu.org/) to name a few) propose a bunch of extensions (see [here](https://clang.llvm.org/docs/LanguageExtensions.html) or [there](https://gcc.gnu.org/onlinedocs/gcc/C-Extensions.html)).
 
 And the C language comes with thousands of libraries of course.
 
 ## My favourite code
 
-Hereafter are few tools and implementations of famous algorithms of my own written in C.
+Hereafter are few tools and few implementations of famous algorithms of my own written in C.
 
 - tools are here to show that the C language can be extended to provide software component similar to those available with "modern" languages.
 - algorithms are here for fun and personal studies.
@@ -62,8 +64,8 @@ The C standard defines timers with `timerfd_create` and `timerfd_settime`.
 
 This is a never-seen-before implementation of a [map library](https://github.com/farhiongit/c_thread_pool/blob/master/map.h) that can manage maps, sets, ordered and unordered lists :
 
-    - It uses only 7 functions: create, destroy, insert, traverse, forward and backward (and remove elements), find a key (and remove it) and count.
-    - All functions are MT-safe (which is not true for most implementations of maps).
+- It uses only 7 functions: create, destroy, insert, traverse, forward and backward (and remove elements), find a key (and remove it) and count.
+- All functions are MT-safe (which is not true for most implementations of maps).
 
 #### Templates (maps, sets and lists)
 
@@ -173,13 +175,15 @@ The book "Programming with POSIX Threads" by Butenhof, David R., 1997, explains 
 
 Multithreading is now integrated in the C standard, as a subset of the POSIX threads.
 
-## My favourite links
-
-- WG14, the international working group for the programming language C.
-  https://www.open-std.org/jtc1/sc22/wg14/www/wg14_document_log.htm
-
+-------
 Thanks for reading !
 
--------
-*frr*
+frr
 
+
+[^1]: [Modern C. Jens Gustedt. Manning, 2025](https://gustedt.gitlabpages.inria.fr/modern-c/)
+  It explains clearly the use of pointers and arrays.
+
+[^2]: [WG14, the international working group for the programming language C](https://www.open-std.org/jtc1/sc22/wg14/www/wg14_document_log.htm)
+
+[^3]: [The C Standard charter, WG14 N3280, 2024] (https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3280.htm)
