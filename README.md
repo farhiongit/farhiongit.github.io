@@ -8,7 +8,7 @@ I'm am very fond of C. The C programming language is imperative, and only impera
 
 It is nevertheless a [modern](https://inria.hal.science/hal-02383654v2/preview/modernC.pdf#page=2)[^1] and [evolving language](https://www.open-std.org/jtc1/sc22/wg14/www/wg14_document_log.htm)[^2]. The language is small and simple, so the programmer can focus on what is to be done rather than on how to do it (what you C is what you get).
 
-The [specifications](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3435.pdf) are short (168 pages for the core language) and easy to understand, they stick to [sounded principles](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3280.htm)[^3], and common compilers ([clang](https://clang.llvm.org/) and [gcc](https://gcc.gnu.org/) to name a few) propose a bunch of extensions (see [here](https://clang.llvm.org/docs/LanguageExtensions.html) or [there](https://gcc.gnu.org/onlinedocs/gcc/C-Extensions.html)).
+The [specifications](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3435.pdf)[^3] are short (168 pages for the core language) and easy to understand, they stick to [sounded principles](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3280.htm)[^4], and common compilers ([clang](https://clang.llvm.org/) and [gcc](https://gcc.gnu.org/) to name a few) propose a bunch of extensions (see [here](https://clang.llvm.org/docs/LanguageExtensions.html) or [there](https://gcc.gnu.org/onlinedocs/gcc/C-Extensions.html)).
 
 And the C language comes with thousands of libraries of course.
 
@@ -181,9 +181,10 @@ Thanks for reading !
 frr
 
 
-[^1]: [Modern C. Jens Gustedt. Manning, 2025](https://gustedt.gitlabpages.inria.fr/modern-c/)
-  It explains clearly the use of pointers and arrays.
+[^1]: [Modern C. Jens Gustedt. Manning, 2025](https://gustedt.gitlabpages.inria.fr/modern-c/).
 
-[^2]: [WG14, the international working group for the programming language C](https://www.open-std.org/jtc1/sc22/wg14/www/wg14_document_log.htm)
+[^2]: [WG14, the international working group for the programming language C](https://www.open-std.org/jtc1/sc22/wg14/www/wg14_document_log.htm).
 
-[^3]: [The C Standard charter, WG14 N3280, 2024] (https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3280.htm)
+[^3]: [ISO/IEC 9899:2024, C programming language specification](https://www.open-std.org/JTC1/SC22/WG14/www/projects) and other documentation.
+
+[^4]: [The C Standard charter, WG14 N3280, 2024](https://www.open-std.org/jtc1/sc22/wg14/www/docs/n3280.htm).
