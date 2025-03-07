@@ -4,7 +4,7 @@
 
 Let's go straight to the point: I'm an old school IT engineer.
 
-I'm am very fond of C. The C programming language is imperative, and only imperative (no class of objects, no inheritance, no templates, no generic programming), so it is simple and easy to learn.
+I'm am very fond of C. The C programming language is imperative, and only imperative (only one paradigm, no class of objects, no inheritance, no templates, no generic programming), so it is simple and easy to learn.
 
 It is nevertheless a [modern](https://inria.hal.science/hal-02383654v2/preview/modernC.pdf#page=2)[^1] and [evolving language](https://www.open-std.org/jtc1/sc22/wg14/www/wg14_document_log.htm)[^2]. The language is small and simple, so the programmer can focus on what is to be done rather than on how to do it (what you C is what you get).
 
@@ -83,7 +83,7 @@ This is therefore another implementation of containers with is strongly typed, i
 
 [trace](https://github.com/farhiongit/c_thread_pool/blob/master/trace.h) permits to log all calls to a function without changing the code.
 
-[log4t] is a korn-shell script that catches the standard input, standard output and standard error of a process and log them to files, augmented with timestamp, without changing the code of the process and without recompiling. Worth to be seen.
+[log4t](https://github.com/farhiongit/log4t) is a korn-shell script that catches the standard input, standard output and standard error of a process and log them to files, augmented with timestamp, without changing the code of the process and without recompiling. Worth to be seen.
 
 #### h2md
 
@@ -96,14 +96,14 @@ This guarantees that documentation is in line with the code.
 
 #### game of life
 
-The [game of unlimited life](https://github.com/farhiongit/hashlife). Let cells evolve in an (almost) infinite space for an (almost) infinite time.
+The [game of unlimited life](https://github.com/farhiongit/hashlife) : let cells evolve in an (almost) infinite space for an (almost) infinite time.
 
-The code implements in C language the Hash-life algorithm proposed by R. Gosper in 1984 to explore the evolution of the Conway's Game Of Life.
+The code implements in C language the [Hash-life algorithm](https://conwaylife.com/wiki/HashLife) proposed by R. Gosper in 1984 to explore the evolution of the [Conway's Game Of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life).
 With a user-friendly programming interface.
 
 #### Aho Corasick
 
-Make the famous Aho Corasick algorithm [easy to use](https://github.com/farhiongit/aho-corasick-1975) for C.
+Make the famous [Aho Corasick algorithm](https://en.wikipedia.org/wiki/Aho%E2%80%93Corasick_algorithm) easy to use [for C]((https://github.com/farhiongit/aho-corasick-1975)).
 
 It faithfully and accurately sticks, step by step, to the pseudo-code given in the original (and exquisite) paper of 1975 from Aho and Corasick: "Efficient string matching: An aid to bibliographic search"
 
@@ -114,7 +114,7 @@ But this implementation comes with few enhancements:
 
 #### Exact cover search with the Knuth's Dancing links algorithm
 
-Make the famous Knuth's Dancing links algorithm [easy to use](https://github.com/farhiongit/dancing-links) for C.
+Make the famous [Knuth's Dancing links algorithm](https://en.wikipedia.org/wiki/Dancing_Links) easy to use [for C](https://github.com/farhiongit/dancing-links).
 
 Can be used to solve Sudoku grids for instance.
 
@@ -134,9 +134,11 @@ That is why C is a great language.
 
 ### Korn-shell
 
-Korn-shell is similar to bash (as a predecessor) but it is much faster even though bash brings facilities for interactive shell, as well as more advanced coprocesses exchanging messages.
+Korn-shell is similar to bash (as a predecessor) but it is much faster even though bash brings facilities for interactive shell, as well as more advanced co-processes exchanging messages.
 
-It's powerful and its awkward syntax is so funny !
+Korn-shell is powerful and its awkward syntax is so funny !
+
+You can read "Learning the Korn Shell" (Bill Rosenblatt, 1993) for a clear introduction.
 
 ## My favourite resources and books
 
@@ -146,22 +148,26 @@ Considering new languages, those struggling to reach the top of the [TIOBE-index
 
 Therefore, I'm more into books that focus on concepts that technical aspects:
 
-- The C language - K&R
+- The C Programming Language, Second Edition - Kernighan, Brian W. & Ritchie, Dennis M. - 1988
 - Introduction to Programming Using SML - Hansen, Michael - 1999
 - The Annotated Turing - Petzold, Charles - 2008
 - Facts and Fallacies of Software Engineering - Glass, Robert L. - 2002
 - Smalltalk 80: The Language - Goldberg, Adele and Robson, David - 1989
+- Programming with POSIX Threads" - Butenhof, David R. - 1997
+- Modern C++ Design: Generic Programming and Design Patterns Applied - Alexandrescu, Andrei - 2001
 
 ### OOP
 
 I started to learn object-oriented programming with an early version of [C++ Annotations](http://www.icce.rug.nl/documents/cplusplus/) by Frank B. Brokken.
 It is clear and focuses on concepts rather than recipes.
 
-Smalltalk is a purely object-oriented conceptual language. Pharo is a good implementation of a variant of Smalltalk.
+Smalltalk is a purely object-oriented conceptual language. [Pharo](https://www.pharo.org/web/) is a good implementation of a variant of Smalltalk.
 
 ### Functional programming
 
 SML and Haskell are purely functional languages. So they are great to learn the concepts (a.k.a "everything is recursive") of functional programming without the burden of more general languages.
+
+[https://learnyouahaskell.com](https://learnyouahaskell.com) is a good resource to get started.
 
 ### Generic programming
 
